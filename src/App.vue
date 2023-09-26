@@ -3,7 +3,7 @@ import { store } from './store.js'
 import AppHeader from './components/AppHeader.vue';
 import AppMain from './components/AppMain.vue'
 
-
+//TO ADD PROPS AND LOADING MESSAGE
 
 export default {
   name: 'App',
@@ -28,10 +28,8 @@ export default {
 </script>
 
 <template>
-
   <AppHeader></AppHeader>
   <AppMain></AppMain>
-  
 </template>
 
 <style lang="scss">

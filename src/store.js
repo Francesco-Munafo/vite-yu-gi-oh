@@ -11,7 +11,7 @@ export const store = reactive({
             .get(this.base_url)
             .then(response => {
                 this.cards = response.data.data;
-                
+
             })
             .catch(error => {
                 console.error(error);
