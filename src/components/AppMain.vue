@@ -29,8 +29,8 @@ export default {
     <main class="p-5">
 
         <AppCollection v-if="store.collectionCount"></AppCollection>
-        <div v-else>
-            Caricamento
+        <div v-else class="text-center align-middle">
+            <h2>Loading...</h2>
         </div>
     </main>
 </template>
