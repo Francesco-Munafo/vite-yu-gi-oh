@@ -13,7 +13,7 @@ export default {
     },
     methods:{
         archetypeFilter(){
-            store.fetchData(store.base_url + `&archetype=${store.selectedArchetype}`)
+            store.fetchData(store.base_url + `?archetype=${store.selectedArchetype}&num=20&offset=0`)
             console.log(store.selectedArchetype);
         }
     },

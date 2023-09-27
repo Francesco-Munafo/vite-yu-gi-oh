@@ -18,7 +18,7 @@ export default {
     },
     created() {
 
-        store.fetchData(store.base_url)
+        store.fetchData(store.base_url + `?num=20&offset=0`)
         store.fetchFilter()
 
     },
