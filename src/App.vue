@@ -15,12 +15,6 @@ export default {
 
     }
   },
-  created() {
-
-    store.fetchData()
-    store.fetchFilter()
-
-  },
   components: {
     AppHeader,
     AppMain

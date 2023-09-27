@@ -16,14 +16,10 @@ export default {
 
         }
     },
-   /* methods:{
-        archetypeFilter(){
-            const archetypeUrl = this.store.base_url + ``
-        }
-    },*/
     created() {
 
-        store.fetchData()
+        store.fetchData(store.base_url)
+        store.fetchFilter()
 
     },
 }

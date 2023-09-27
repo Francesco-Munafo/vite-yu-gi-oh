@@ -7,12 +7,14 @@ export const store = reactive({
     collectionCount: null,
     archetypeList_url: 'https://db.ygoprodeck.com/api/v7/archetypes.php',
     archetypes: null,
+    selectedArchetype: '',
 
 
-    fetchData() {
+    fetchData(url) {
         axios
-            .get(this.base_url)
+            .get(url)
             .then(response => {
+                console.log(response.config.url);
                 this.cards = response.data.data;
                 this.collectionCount = response.data.data.length;
                 

@@ -2,7 +2,7 @@
 import { store } from '../store.js'
 export default {
     name: 'SelectBox',
-    emits:['selectFilter'],
+    emits:['select-filter'],
 
     data() {
 
@@ -10,20 +10,17 @@ return {
 
     store
 
+
 }
 },
-methods:{
-        archetypeFilter(){
-            const archetypeUrl = this.store.base_url + ``
-        }
-    },
+
 
 }
 </script>
 
 <template>
     <div class="filter">
-        <select class="form-select" id="select" @change="$emit('selectFilter')">
+        <select class="form-select" id="select" @change="$emit('select-filter')" v-model="store.selectedArchetype">
             <option selected disabled>Categories</option>
             <option v-for="archetype in store.archetypes" :value="archetype.archetype_name">{{archetype.archetype_name}}</option>
             
