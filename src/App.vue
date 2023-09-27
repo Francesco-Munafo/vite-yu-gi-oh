@@ -18,6 +18,7 @@ export default {
   created() {
 
     store.fetchData()
+    store.fetchFilter()
 
   },
   components: {
@@ -28,10 +29,12 @@ export default {
 </script>
 
 <template>
+
   <AppHeader></AppHeader>
+
   <AppMain></AppMain>
+
 </template>
 
 <style lang="scss">
-@use './assets/scss/app.scss'
 </style>

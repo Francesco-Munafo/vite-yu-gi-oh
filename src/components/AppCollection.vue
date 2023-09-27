@@ -19,7 +19,7 @@ export default {
 
         <h3 class="bg-dark text-white mb-0 p-3 w-100">Found {{ store.collectionCount }} cards </h3>
 
-        <div class="row gap-3 justify-content-around py-4 pt-0 ">
+        <div class="row row-cols-5 g-3 justify-content-around">
             <AppCard :card="Card" v-for="Card in store.cards"></AppCard>
         </div>
         
