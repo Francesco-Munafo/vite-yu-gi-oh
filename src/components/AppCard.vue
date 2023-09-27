@@ -3,7 +3,7 @@
 export default {
     name: 'AppCard',
     props: {
-        Card: Object
+        card: Object
     }
 }
 </script>

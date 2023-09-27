@@ -27,7 +27,10 @@ export default {
 <template>
     <main class="p-5">
 
-        <AppCollection></AppCollection>
+        <AppCollection v-if="store.collectionCount"></AppCollection>
+        <div v-else>
+            Caricamento
+        </div>
     </main>
 </template>
 
